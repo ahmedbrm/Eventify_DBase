@@ -4,4 +4,5 @@ gunicorn
 psycopg2-binary
 django-environ
 whitenoise
-corsheaders
+django-cors-headers
+
