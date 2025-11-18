@@ -46,7 +46,6 @@ INSTALLED_APPS = [
 
     'EventApp.apps',
     "corsheaders",
-    'admin_honeypot',
 ]
 
 MIDDLEWARE = [
