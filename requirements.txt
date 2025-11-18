@@ -7,3 +7,5 @@ whitenoise
 django-cors-headers
 django-environ
 django-admin-honeypot
+psycopg2-binary
+
