@@ -29,7 +29,14 @@ SECRET_KEY = config('SECRET_KEY' ,cast=str, default=get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    ".railway.app",
+    "*"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://*.railway.app",
+]
 
 
 # Application definition
