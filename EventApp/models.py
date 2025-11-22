@@ -97,7 +97,6 @@ class Event(models.Model):
     description = models.TextField()
     date = models.DateField(default=timezone.now)
     location = models.CharField(max_length=255)
-    photo_url = models.URLField(max_length=500, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -139,6 +138,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     num_likes = models.IntegerField(default=0)
     num_saves = models.IntegerField(default=0)
+    
     
     class Meta:
         db_table = 'posts'
