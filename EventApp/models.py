@@ -237,7 +237,8 @@ class Photo(models.Model):
         blank=True,
         db_column='post_id'
     )
-    image = models.ImageField(default= 'dall.png' , blank=True )
+    
+    image = models.ImageField(upload_to='photos/', default='dall.png', blank=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
     
     class Meta:
